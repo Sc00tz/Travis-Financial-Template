@@ -1,0 +1,332 @@
+Travis’ Financial Template for Google Sheets
+
+
+Sheet: Categories Budget
+------------------------
+
+Description:
+
+Column A is for the Category
+Column B is for the Subcategory
+Column C is for January’s Budgeted number
+Column D is for January’s Earned/Spent number
+Column E is the calculated Available number
+
+Columns C, D, and E are copied over (to F, G, H for February) for each month. Below is the formulas for January. 
+
+Formulas:
+
+C3: =SUM(C5,C10,C17,C23,C29,C38,C46,C50,C55,C60,C65) # Calculated Budgeted from adding all Budgeted Categories
+C10: =SUM(C11:C15) # Category Budgeted total based on subcategories 
+C17: =SUM(C18:C21) # Category Budgeted total based on subcategories
+C23: =SUM(C24:C27) # Category Budgeted total based on subcategories
+C29: =SUM(C30:C36) # Category Budgeted total based on subcategories
+C38: =SUM(C39:C44) # Category Budgeted total based on subcategories
+C46: =SUM(C47:C48) # Category Budgeted total based on subcategories
+C50: =SUM(C51:C53) # Category Budgeted total based on subcategories
+C55: =SUM(C56:C58) # Category Budgeted total based on subcategories
+C60: =SUM(C61:C63) # Category Budgeted total based on subcategories
+C66: =SUM(C66:C68) # Category Budgeted total based on subcategories
+
+D3: =SUM(D5,D10,D17,D23,D29,D38,D46,D50,D55,D60,D65) # Calculated Earned/Spent from adding all Earned/Spent Categories 
+
+D5: =SUM(D6:D8) # Category Earned/Spent total based on sub categories
+D6: =SUMIF(Jan!$J:$J,$B6,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D7: =SUMIF(Jan!$J:$J,$B7,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D8: =SUMIF(Jan!$J:$J,$B8,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+
+D10: =SUM(D11:D15) # Category Earned/Spent total based on sub categories
+D11: =SUMIF(Jan!$J:$J,$B11,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D12: =SUMIF(Jan!$J:$J,$B12,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D13: =SUMIF(Jan!$J:$J,$B13,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D14: =SUMIF(Jan!$J:$J,$B14,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D15: =SUMIF(Jan!$J:$J,$B15,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+
+D17: =SUM(D18:D21) # Category Earned/Spent total based on sub categories
+D18: =SUMIF(Jan!$J:$J,$B18,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D19: =SUMIF(Jan!$J:$J,$B19,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D20: =SUMIF(Jan!$J:$J,$B20,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D21: =SUMIF(Jan!$J:$J,$B21,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+
+D23: =SUM(D24:D27) # Category Earned/Spent total based on sub categories
+D24: =SUMIF(Jan!$J:$J,$B24,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D25: =SUMIF(Jan!$J:$J,$B25,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D26: =SUMIF(Jan!$J:$J,$B26,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D27: =SUMIF(Jan!$J:$J,$B27,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+
+D29: =SUM(D30:D36) # Category Earned/Spent total based on sub categories
+D30: =SUMIF(Jan!$J:$J,$B30,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D31: =SUMIF(Jan!$J:$J,$B31,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D32: =SUMIF(Jan!$J:$J,$B32,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D33: =SUMIF(Jan!$J:$J,$B33,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D34: =SUMIF(Jan!$J:$J,$B34,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D35: =SUMIF(Jan!$J:$J,$B35,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D36: =SUMIF(Jan!$J:$J,$B36,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+
+D38: =SUM(D39:D44) # Category Earned/Spent total based on sub categories
+D39: =SUMIF(Jan!$J:$J,$B39,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D40: =SUMIF(Jan!$J:$J,$B40,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D41: =SUMIF(Jan!$J:$J,$B41,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D42: =SUMIF(Jan!$J:$J,$B42,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D43: =SUMIF(Jan!$J:$J,$B43,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D44: =SUMIF(Jan!$J:$J,$B44,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+
+D46: =SUM(D47:D48) # Category Earned/Spent total based on sub categories
+D47: =SUMIF(Jan!$J:$J,$B47,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D48: =SUMIF(Jan!$J:$J,$B48,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+
+D50: =SUM(D51:D53) # Category Earned/Spent total based on sub categories
+D51: =SUMIF(Jan!$J:$J,$B51,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D52: =SUMIF(Jan!$J:$J,$B52,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D53: =SUMIF(Jan!$J:$J,$B53,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+
+D55: =SUM(D56:D58) # Category Earned/Spent total based on sub categories
+D56: =SUMIF(Jan!$J:$J,$B56,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D57: =SUMIF(Jan!$J:$J,$B57,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D58: =SUMIF(Jan!$J:$J,$B58,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+
+D60: =SUM(D61:D63) # Category Earned/Spent total based on sub categories
+D61: =SUMIF(Jan!$J:$J,$B61,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D62: =SUMIF(Jan!$J:$J,$B62,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D63: =SUMIF(Jan!$J:$J,$B63,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+
+D65: =SUM(D66:D68) # Category Earned/Spent total based on sub categories
+D66: =SUMIF(Jan!$J:$J,$B66,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+D67: =SUMIF(Jan!$J:$J,$B67,Jan!$G:$G) # Category Earned/Spent total based on subcategories in monthly sheet
+
+D72: =SUMIF(Jan!$J$5:$J,$B72,Jan!$G$5:$G) # Calculated totals of Transfers from monthly sheet (These SHOULD end up being zero)
+
+E3: =SUM(E10,E17,E23,E29,E38,E46,E55,E60,E65,E50) # Calculated Available from adding all Available Categories 
+
+E5: =SUM(E6:E8) # Category total from subcategory
+E6: =SUM(C6:D6) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E7: =SUM(C7:D7) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E8: =SUM(C8:D8) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+
+E10: =SUM(E11:E15) # Category total from subcategory
+E11: =SUM(C11:D11) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E12: =SUM(C12:D12) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E13: =SUM(C13:D13) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E14: =SUM(C14:D14) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E15: =SUM(C15:D15) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+
+E17: =SUM(E18:E21) # Category total from subcategory
+E18: =SUM(C18:D18) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E19: =SUM(C19:D19) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E20: =SUM(C20:D20) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E21: =SUM(C21:D21) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+
+E23: =SUM(E24:E27) # Category total from subcategory
+E24: =SUM(C24:D24) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E25: =SUM(C25:D25) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E26: =SUM(C26:D26) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E27: =SUM(C27:D27) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+
+E29: =SUM(E30:E36) # Category total from subcategory
+E30: =SUM(C30:D30) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E31: =SUM(C31:D31) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E32: =SUM(C32:D32) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E33: =SUM(C33:D33) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E34: =SUM(C34:D34) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E35: =SUM(C35:D35) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E36: =SUM(C36:D36) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+
+E38: =SUM(E39:E44) # Category total from subcategory
+E39: =SUM(C39:D39) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E40: =SUM(C40:D40) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E41: =SUM(C41:D41) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E42: =SUM(C42:D42) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E43: =SUM(C43:D43) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E44: =SUM(C44:D44) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+
+E46: =SUM(E47:E48) # Category total from subcategory
+E47: =SUM(C47:D47) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E48: =SUM(C48:D48) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+
+E50: =SUM(E51:E53) # Category total from subcategory
+E51: =SUM(C51:D51) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E52: =SUM(C52:D52) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E53: =SUM(C53:D53) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+
+E55: =SUM(E56:E58) # Category total from subcategory
+E56: =SUM(C56:D56) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E56: =SUM(C57:D57) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E58: =SUM(C58:D58) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+
+E60: =SUM(E61:E63) # Category total from subcategory
+E61: =SUM(C61:D61) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E62: =SUM(C62:D62) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+E63: =SUM(C63:D63) # Subcategory available calculated from subcategory’s Budgeted and Earned/Spent
+
+Conditional Formatting for Categories Budget sheet:
+
+# Highlight Transfer totals that don’t end up resulting in 0. Use this to find miscategorized transfers 
+Apply to range: D72,G72,J72,M72,P72,S72,V72,Y72,AE72,AH72,AK72
+Format Rules: Is not equal to 0
+Formatting Style: Highlight Red
+
+# Highlight Available amount green if money is left (Skips Income)
+Apply to range: E3,H3,K3,N3,Q3,T3,W3,Z3,AC3,AF3,AI3,AL3,E10:E67,H10:H67,K10:K67,N10:N67,Q10:Q67,T10:T67,W10:W67,Z10:Z67,AC10:AC67,AF10:AF67,AI10:AI67,AL10:AL67
+Format rules: Greater than 0
+Formatting style: Highlight Green
+
+# Highlight Available amount red if over budget (Skips Income)
+Apply to range: E3,H3,K3,N3,Q3,T3,W3,Z3,AC3,AF3,AI3,AL3,E10:E67,H10:H67,K10:K67,N10:N67,Q10:Q67,T10:T67,W10:W67,Z10:Z67,AC10:AC67,AF10:AF67,AI10:AI67,AL10:AL67
+Format rules: Less than 0
+Formatting style: Italics, Highlight Red
+
+# Highlight Available amount blue if $0, exactly on budget (Skips Incom)
+Apply to range: E3,H3,K3,N3,Q3,T3,W3,Z3,AC3,AF3,AI3,AL3,E10:E67,H10:H67,K10:K67,N10:N67,Q10:Q67,T10:T67,W10:W67,Z10:Z67,AC10:AC67,AF10:AF67,AI10:AI67,AL10:AL67
+Format rules: Is equal to 0
+Formatting style: Highlight Blue
+
+# Highlight budget for the current month (needs to be done for each month)
+Apply to range: C1:E73
+Formula rules: Custom formula is =TEXT(TODAY(), "mmmm") = $C$1
+Formatting style: Highlight Purple
+
+
+Sheet: Jan (Duplicate for each month, name them by the three letter shorthand)
+------------------------------------------------------------------------------
+
+Description:
+
+Column A is for For account name, auto-populated based on Account ID
+Column B is for Account ID
+Column C is for Transaction ID
+Column D is for Transaction Type (Debit or Credit)
+Column E is for Transaction Date
+Column F is for Date Posted
+Column G is for Amount
+Column H is for Description
+Column I is for Card Used (for credit card accounts with multiple cards)
+Column J is for Category (Auto-populated from subcategories in Categories Budget sheet)
+Column H is for Notes
+
+The top two rows also include calculations for total earned, total spent, and change for that month
+
+Formulas: 
+
+A5 (and everything below): =IFERROR(VLOOKUP(B5, {'Account Names'!$B:$B, 'Account Names'!$A:$A}, 2, FALSE), "")
+
+E2: =SUM(G1,G2)  # Calculation for month’s change
+
+G1: =SUMIF(G5:G, ">0")  # Add all positive numbers to calculate Total Earned
+G2: =SUMIF(G6:G, "<0") # Add all negative numbers to calculate Total Spent
+
+Conditional formatting:
+
+# This will highlight lines that have duplicate Transaction IDs
+Apply to range: A1:F400,G1:G141,H1:K400,G143:G400
+Format rules: Custom format is =COUNTIF ($C$1:$C, $C1)>1
+Formatting style: Highlight Yellow
+
+
+Sheet: Piggy Banks
+------------------
+
+Description:
+
+Column A (for Piggy Bank) is the Piggy Bank name
+Column A (for Accounts) is the Account name
+Column A (for Monthly Piggy Bank Entries) is the Piggy Bank name
+Column B (for Piggy Bank) is for the current amount saved
+Column B (for Accounts) is the total amount in that account
+Column B (for Monthly Piggy Bank Entries) is January’s amount for that piggy bank, continue the row for each month. 
+Column C (for Piggy Bank) is the target amount you want to save
+Column C (for Accounts) is the amount allocated to various piggy banks
+Column D (for Piggy Bank) is how much is left to save to reach goal
+Column D (for Account) is how much is left to allocate. If negative, you’re over allocated
+Column E is for what account that piggy bank is linked to
+Column F is how many days left until your goal
+Column G is the date you want to reach your goal
+Column H is the calculated amount you should save each month to reach your goal
+Column I is for notes.
+
+Formulas:
+
+(Do for each row that has a piggy bank)
+B2: =SUM(B41:M41) # Calculated amount saved from Monthly Piggy Bank Entries lower in the sheet
+D2: =C2-B2 # Calculated amount left
+F2: =DAYS(G2, TODAY()) # Calculate number of days left
+H2: =IF(F2<30,D2,D2/((F2/7)/4)) # Calculation for monthly savings amount
+
+(Do for each account you’re using for piggy banks)
+B19: =(Reports!$B$5) Get account total from Reports sheet
+C19: =SUM(B2) # Total amount calculated from Piggy Bank for that account
+D19 - =(B19-C19) # Calculated amount left for allocation
+
+Conditional Formatting:
+
+# Highlight the amount left green if reached goal
+Apply to range: D2:D16
+Format rules: Is equal to 0
+Formatting style: Highlight Green
+
+# Highlight days left green if more than 90
+Apply to range: F2:F16
+Format rules: Greater than 90
+Formatting style: Highlight Green
+
+# Highlight days left Yellow if between 60 and 90 days left
+Apply to range: F2:F16
+Format rules: Greater than 60
+Formatting style: Highlight yellow
+
+# Highlight days left Orange if between 30 and 60 days left
+Apply to range: F2:F16
+Format rules: greater than or equal to 30
+Formatting style: Highlight Orange
+
+# Highlight days left Red if less than 30 days remain
+Apply to range: F2:F16
+Format rules: Less than 30
+Formatting style: Bold, Highlight Red
+
+# Highlight amount left to allocate red if zero or below
+Apply to range D19:D20
+Format rules: Less than or equal to 0
+Formatting style: Bold, Highlight Red
+
+Sheet: Reports
+-------------- 
+
+Column A (for Accounts) is for the name of the account
+Column A (for Cashflow) is for the three letter abbreviation for each month
+Column A (for Monthly Categories) is the name of each of the categories
+Column B (for Accounts) is the calculated amount in each account
+Column B (for Cashflow) is the positive value for that month’s change
+Column B (for Monthly Categories) is the total for each category for January (duplicate for each month)
+Column C (for Cashflow) Is the negative value for that month’s change
+Column D (for Cashflow) is the absolute value for that month’s change
+
+Formulas:
+
+(do for each account in account section)
+B2: =SUM(
+SUMIF(Jan!$A:$A,$A2,Jan!$G:$G),SUMIF(Feb!$A:$A,$A2,Feb!$G:$G),SUMIF(Mar!$A:$A,$A2,Mar!$G:$G),SUMIF(Apr!$A:$A,$A2,Apr!$G:$G),SUMIF(May!$A:$A,$A2,May!$G:$G),SUMIF(Jun!$A:$A,$A2,Jun!$G:$G),SUMIF(Jul!$A:$A,$A2,Jun!$G:$G),SUMIF(Aug!$A:$A,$A2,Jun!$G:$G),SUMIF(Sep!$A:$A,$A2,Jun!$G:$G),SUMIF(Oct!$A:$A,$A2,Jun!$G:$G),SUMIF(Nov!$A:$A,$A2,Jun!$G:$G),SUMIF(Dec!$A:$A,$A2,Jun!$G:$G),('Account Names'!$C$2)) # Calculates the total for that account.
+
+(do for each month in Cashflow section, this is split negative and positive values for the chart)
+B66: =IF((SIGN(D66)=1),D66,) # Positve value
+C66: =IF((SIGN(D66)=1),,D66) # Negative value
+C67: =(Jan!E2) # Value obtained from each month’s sheet
+
+(Do for each month, for each category, in Monthly Categories)
+B82: =UMINUS('Categories Budget'!D10) # This gets the value from the Categories Budget sheet for the total spent for that Category. It also converts them all to positive numbers so they can be properly render the pie chart)
+
+Actual report info to come
+
+Conditional Formatting: 
+
+# Highlight negative values for the Absolute value for each month in Cashflow
+Apply to range: D65:D77
+Format rules: Less than 0
+Formatting style: Italics and highlight red
+
+Sheet: Account Names
+--------------------
+
+Column A is for the name of the account
+Column B is for the Bank Account Identifier # Match what you get from your bank report
+Column C is for the Starting Balance of the account for Jan to properly calculate account balances
+Column D is for the Starting Balance Date, I usually set it for December 31s of the previous year. 
